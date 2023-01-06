@@ -79,7 +79,7 @@ def do_all():
         file1text = file1.read()
         file2text = file2.read()
 
-        out.write(str(levenshtein_distance(file1text, file2text) / len(file1text)) + "\n")
+        out.write(str(levenshtein_distance(file1text, file2text) / len(file2text)) + "\n")
 
     inp.close()
     out.close()
