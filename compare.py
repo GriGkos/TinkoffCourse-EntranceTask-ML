@@ -61,9 +61,9 @@ def levenshtein_distance(token1, token2):
 
 
 def do_all():
-    parser = argparse.ArgumentParser(description='Videos to images')
-    parser.add_argument('indir', type=str, help='Input dir for videos')
-    parser.add_argument('outdir', type=str, help='Output dir for image')
+    parser = argparse.ArgumentParser(description='Compare two texts')
+    parser.add_argument('indir', type=str, help='Input dir to texts')
+    parser.add_argument('outdir', type=str, help='Output dir for saving result')
     args = parser.parse_args()
 
     inp = open(args.indir, 'r')
